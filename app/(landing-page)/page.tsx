@@ -1,5 +1,6 @@
 import { FeatureGrid } from "@/components/features";
 import { Hero } from "@/components/hero";
+import Home from "@/components/landing-page/home";
 import { PricingGrid } from "@/components/pricing";
 import { stackServerApp } from "@/stack";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
@@ -24,7 +25,11 @@ export default async function IndexPage() {
 
   return (
     <>
-      <Hero
+
+      <Home />
+
+      
+      {/* <Hero
         capsuleText="100% Open-source & Free"
         capsuleLink="https://stacktemplate.com"
         title="A Multi-tenant Next.js Starter Template"
@@ -183,7 +188,8 @@ export default async function IndexPage() {
             buttonHref: stackServerApp.urls.signUp,
           },
         ]}
-      />
+      /> */}
+
     </>
   );
 }

@@ -125,7 +125,19 @@ export function LandingPageHeader(props: NavProps) {
 
   return (
     <header className="fixed w-full z-50 bg-background/80 px-4 md:px-8 backdrop-blur">
-      <div className="flex h-18 items-center justify-between py-4">
+
+      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b" >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="text-2xl font-bold">anton</div>
+            <button className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-colors">
+              Free Intro Call
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* <div className="flex h-18 items-center justify-between py-4">
         <div className="flex items-center gap-4 md:gap-10">
           <Logo className="hidden md:flex" />
 
@@ -155,7 +167,7 @@ export function LandingPageHeader(props: NavProps) {
             <AuthButtons />
           </nav>
         </div>
-      </div>
+      </div> */}
     </header>
   );
 }

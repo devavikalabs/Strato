@@ -50,6 +50,7 @@ export function Hero(props: {
         {props.credits && (
           <p className="text-sm text-muted-foreground mt-4">{props.credits}</p>
         )}
+
       </div>
     </section>
   );
